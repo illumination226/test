@@ -1,4 +1,12 @@
 HelloWorld::Application.routes.draw do
+  resources :pages
+
+  resources :announcements
+
+  resources :users
+
+  resources :comments
+
   resources :posts
 
   get "home/index"
