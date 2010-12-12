@@ -1,5 +1,6 @@
   <%= javascript_include_tag :all %>
   <%= init_tinymce_hammer_if_required %>
+  
 <%= form_for(@announcement) do |f| %>
   <% if @announcement.errors.any? %>
     <div id="error_explanation">
