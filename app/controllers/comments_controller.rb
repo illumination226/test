@@ -1,4 +1,13 @@
 class CommentsController < ApplicationController
+  before_filter :valid, :except => [:create]
+  
+  def valid
+    if !session[:user_id]
+      flash[:notice] = "Please login"
+      redirect_to :controller => 'login', :action => 'index'
+    end
+  end
+  
   # GET /comments
   # GET /comments.xml
   def index
@@ -42,12 +51,19 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(params[:comment])
 
+	if @comment.post_id.nil?
+		@redirect_value = Announcement.find(:first, :conditions => "id = '#{@comment.announcement_id}'")
+	else
+    	@redirect_value = Post.find(:first, :conditions => "id = '#{@comment.post_id}'")
+	end
+
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to(@comment, :notice => 'Comment was successfully created.') }
+        format.html { redirect_to(@redirect_value, :notice => 'Comment was successfully created.') }
         format.xml  { render :xml => @comment, :status => :created, :location => @comment }
       else
-        format.html { render :action => "new" }
+        flash[:notice] = 'Unable to add Comment please fill out all fields.'
+        format.html { redirect_to(@redirect_value) }
         format.xml  { render :xml => @comment.errors, :status => :unprocessable_entity }
       end
     end
