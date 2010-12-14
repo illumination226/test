@@ -1,4 +1,12 @@
 class LoginController < ApplicationController
+  before_filter :valid, :except => [:index, :authenticate, :logout]
+  
+  def valid
+    if !session[:user_id]
+      flash[:notice] = "Please login to access admin home page"
+      redirect_to :action => 'index'
+    end
+  end
 
   def index
   end
