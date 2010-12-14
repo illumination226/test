@@ -38,8 +38,18 @@
 	<h3>Add Comment</h3>
 	<% @comment = Comment.new %>
 	<% form_for(@comment) do |f| %>
-	  <%= f.error_messages %>
+	<% @comment = Comment.new %>
+		<% form_for(@comment) do |f| %>
+		<% if @comment.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
 	
+	      <ul>
+	      <% @comment.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
 	  <p>
 	    <div class="commentLabel">Name <span style="color: red">*</span></div> 
 	    <%= f.text_field :user %>
