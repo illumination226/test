@@ -1,8 +1,6 @@
 HelloWorld::Application.routes.draw do
   get "login/index"
 
-  get "about/index"
-
   resources :pages
 
   resources :announcements
