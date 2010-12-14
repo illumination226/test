@@ -7,6 +7,10 @@ before_filter :valid, :except => [:index, :show, :to_param]
       redirect_to :controller => 'login', :action => 'index'
     end
   end
+  
+  def extract_id(s)  
+    s.gsub(/.+-(\d+)$/, '\1') if s  
+  end 
 
   # GET /announcements
   # GET /announcements.xml
@@ -22,7 +26,7 @@ before_filter :valid, :except => [:index, :show, :to_param]
   # GET /announcements/1
   # GET /announcements/1.xml
   def show
-    @announcement = Announcement.find(params[:id])
+    @announcement = Announcement.find extract_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -43,7 +47,7 @@ before_filter :valid, :except => [:index, :show, :to_param]
 
   # GET /announcements/1/edit
   def edit
-    @announcement = Announcement.find(params[:id])
+    @announcement = Announcement.find extract_id(params[:id])
   end
 
   # POST /announcements
@@ -65,7 +69,7 @@ before_filter :valid, :except => [:index, :show, :to_param]
   # PUT /announcements/1
   # PUT /announcements/1.xml
   def update
-    @announcement = Announcement.find(params[:id])
+    @announcement = Announcement.find extract_id(params[:id])
 
     respond_to do |format|
       if @announcement.update_attributes(params[:announcement])
@@ -81,7 +85,7 @@ before_filter :valid, :except => [:index, :show, :to_param]
   # DELETE /announcements/1
   # DELETE /announcements/1.xml
   def destroy
-    @announcement = Announcement.find(params[:id])
+    @announcement = Announcement.find extract_id(params[:id])
     @announcement.destroy
 
     respond_to do |format|
