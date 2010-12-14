@@ -1,4 +1,16 @@
 class PostsController < ApplicationController
+  before_filter :valid, :except => [:index, :show, :to_param]
+  
+  def valid
+    if !session[:user_id]
+      flash[:notice] = "Please login to create a new post"
+      redirect_to :controller => 'login', :action => 'index'
+    end
+  end
+
+  def extract_id(s)  
+  	s.gsub(/.+-(\d+)$/, '\1') if s  
+  end 
   # GET /posts
   # GET /posts.xml
   def index
@@ -13,7 +25,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.xml
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find extract_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,7 +46,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = Post.find(params[:id])
+    @post = Post.find extract_id(params[:id])
   end
 
   # POST /posts
@@ -56,7 +68,7 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.xml
   def update
-    @post = Post.find(params[:id])
+    @post = Post.find extract_id(params[:id])
 
     respond_to do |format|
       if @post.update_attributes(params[:post])

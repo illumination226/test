@@ -1,4 +1,13 @@
 class AnnouncementsController < ApplicationController
+before_filter :valid, :except => [:index, :show, :to_param]
+
+  def valid
+    if !session[:user_id]
+      flash[:notice] = "Please login to create a new announcement"
+      redirect_to :controller => 'login', :action => 'index'
+    end
+  end
+
   # GET /announcements
   # GET /announcements.xml
   def index

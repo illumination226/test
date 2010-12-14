@@ -1,4 +1,13 @@
 class UsersController < ApplicationController
+  before_filter :valid
+
+  def valid
+    if !session[:user_id]
+      flash[:notice] = "Please login to modify users"
+      redirect_to :controller => 'login', :action => 'index'
+    end
+  end  
+  
   # GET /users
   # GET /users.xml
   def index
