@@ -1,12 +1,4 @@
 class LoginController < ApplicationController
-  before_filter :valid, :except => [:index, :authenticate, :logout]
-  
-  def valid
-    if !session[:user_id]
-      flash[:notice] = "Please login to access admin home page"
-      redirect_to :action => 'index'
-    end
-  end
 
   def index
   end
@@ -14,7 +6,7 @@ class LoginController < ApplicationController
   def home
   end
   
-    def authenticate
+  def authenticate
 
       #Will create a new object of User, retrieve values from the form and store it variable @user.
       @user = User.new(params[:userform])
