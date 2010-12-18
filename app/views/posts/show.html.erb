@@ -17,7 +17,7 @@
 		<h3><%=h @post.created_at.strftime("%B %d, %Y") %></h3>
 	</div>
     <h1><%=h @post.title %></h1>
-    <%=raw @post.content%>
+    <div><%=raw render :text => @post.content%></div>
 </div>
 <div class="PadLeft beginComment"><h2>Comments</h2>
 <% @comments = Comment.find(:all, :conditions => "post_id = '#{@post.id}'", :order => "created_at DESC")%>
