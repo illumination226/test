@@ -20,7 +20,7 @@ width:781px;
 text-align:left;
 border:8px solid black;
 background:#eeeeee;
-background:url("http://ec2-75-101-253-145.compute-1.amazonaws.com/images/main_background.png") repeat scroll left top transparent;
+background:url("http://www.sahmcentral.com/images/main_background.png") repeat scroll left top transparent;
 border-top:2px solid black;
 border-left:none;
 }
@@ -122,7 +122,7 @@ border-left: 3px solid black;
 .InnerContent .RightContent h3 {
 padding:8px;
 margin:10px 0 0 5px;
-background:url("http://ec2-75-101-253-145.compute-1.amazonaws.com/images/railroad_header.png") no-repeat scroll left top transparent;
+background:url("http://www.sahmcentral.com/images/railroad_header.png") no-repeat scroll left top transparent;
 }
 .InnerContent .RightContent div {
 display:block;
