@@ -1,7 +1,7 @@
 <body topmargin="0" bottommargin="0" id="HomePage">
 <center>
-<!--<img style="margin-left:8px;" src="http://ec2-75-101-253-145.compute-1.amazonaws.com/images/headerweb.png"/>
---><div class="center">
+<%= render 'partials/sheader' %>
+<div class="center">
 <div class="GlobCtrCC">
 <div class="innerBody">
 <div class="Header">
@@ -73,23 +73,9 @@
 	</div>
  </div>
  </div>
-<div class="RightContent">
- <h3>Blog Postings</h3>
-<% recent_posts = Post.all(:limit => 10, :order => "created_at DESC")%>
-<% recent_posts.each do |ind_post| %>
-    <div><%= link_to ind_post.title, ind_post %></div>
-<% end %>
-	<h3><%= link_to 'All Blog Posts', posts_path %></h3>
-<h3>Announcements</h3>
-<% recent_announcements = Announcement.all(:limit => 10, :order => "created_at DESC")%>
-<% recent_announcements.each do |ind_announcement| %>
-    <div><%= link_to ind_announcement.title, ind_announcement %></div>
-<% end %>
-	<h3><%= link_to 'All Announcements', announcements_path %></h3>	
+<%= render 'partials/scolumn2' %>
 </div>
-</div>
-<div class="footer">
-</div>
+<%= render 'partials/sfooter' %>
 </div>
 </div>
 </div>
