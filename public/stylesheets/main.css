@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-background:#333333;
+background:#CCCCCC;
 color:#111111;
 font-family:"Trebuchet MS",Helvetica,sans-serif;
 }
@@ -13,10 +13,10 @@ margin-left:auto;
 margin-right:auto;
 }
 .GlobCtrCC {
-width:781px;
+width:981px;
 }
 .GlobCtrCC .innerBody {
-width:781px;
+width:981px;
 text-align:left;
 border:8px solid black;
 background:#eeeeee;
@@ -33,7 +33,7 @@ padding:0;
 margin:0;
 display:block;
 height:30px;
-width:773px;
+width:973px;
 }
 .Navigation ul li {
 float:left;
@@ -45,8 +45,7 @@ color:#111;
 background:#777;
 font-size:20px;
 vertical-align:middle;
-border-right:1px solid #000;
-border-bottom:3px solid #000;
+border:3px dashed #000;
 display:block;
 line-height:30px;
 overflow:hidden;
@@ -66,7 +65,7 @@ min-height:700px;
 }
 .LeftContent {
 float:left;
-width:558px;
+width:758px;
 }
 .PadLeft {
 padding-left:20px;
