@@ -97,15 +97,6 @@ float:left;
 padding-right:10px;
 width:60px;
 }
-.RightContent {
-float:left;
-width:220px;
-min-height:700px;
-}
-.RightContent .Section {
-margin:20px;
-border 3px solid #CCC;
-}
 .InnerContent .paintingOnly {
 padding:20px 0 20px 250px;
 }
@@ -114,9 +105,15 @@ padding: 10px 50px;
 display:block;
 float:left;
 }
-.InnerContent .RightContent {
-background:#aaaaaa;
-border-left: 3px solid black;
+.RightContent {
+float:left;
+width:220px;
+min-height:700px;
+}
+.RightContent .Section {
+margin:10px;
+padding:10px;
+border 3px solid #CCC;
 }
 .InnerContent .RightContent h3 {
 padding:8px;
