@@ -20,7 +20,6 @@ width:981px;
 text-align:left;
 border:8px solid black;
 background:#eeeeee;
-background:url("http://www.sahmcentral.com/images/main_background.png") repeat scroll left top transparent;
 border-top:2px solid black;
 border-left:none;
 }
@@ -39,6 +38,7 @@ width:973px;
 float:left;
 display:block;
 text-align:center;
+margin-left:10px;
 }
 .Navigation ul li a{
 color:#111;
