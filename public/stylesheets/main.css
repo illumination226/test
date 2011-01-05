@@ -102,6 +102,10 @@ float:left;
 width:220px;
 min-height:700px;
 }
+.RightContent .Section {
+margin:20px;
+border 3px solid #CCC;
+}
 .InnerContent .paintingOnly {
 padding:20px 0 20px 250px;
 }
