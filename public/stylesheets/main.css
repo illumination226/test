@@ -24,7 +24,7 @@ border-top:2px solid black;
 border-left:none;
 }
 .Navigation {
-padding:0 0 0 8px;
+padding:10px 0 0 8px;
 /*background:url(NavigationGradiant.png) repeat-x;*/
 }
 .Navigation ul {
@@ -52,9 +52,6 @@ font-weight:normal;
 width:192px;
 }
 .Navigation ul li .lastrow {
-	width:194px;
-	border-right:none;
-	
 }
 .Navigation ul li a:hover {
 background:#ccc;
