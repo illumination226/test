@@ -140,7 +140,7 @@ border: 1px solid #ccc;
 padding:8px;
 margin:10px 0 0 5px;
 }
-.InnerContent .RightContent div {
+.InnerContent .RightContent .Section div {
 display:block;
 font-size:18px;
 padding:14px 10px 0;
