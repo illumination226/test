@@ -63,8 +63,8 @@ display:block;
 line-height:30px;
 overflow:hidden;
 font-weight:normal;
-margin:0 5px;
-padding:0 5px;
+margin:0 10px;
+padding:0 10px;
 -moz-border-radius-topleft: 10px;
 -moz-border-radius-topright: 10px;
 -moz-border-radius-bottomleft: 10px;
@@ -148,6 +148,7 @@ background:none repeat scroll 0 0 #ccc;
 }
 .InnerContent .RightContent h3 {
 padding:8px;
+margin:0;
 text-align:center;
 }
 .InnerContent .RightContent .Section div {
