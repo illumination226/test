@@ -135,16 +135,17 @@ border: 1px solid #ccc;
 -webkit-border-top-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
 -webkit-border-bottom-right-radius: 10px;
+background:none repeat scroll 0 0 #ccc;
 }
 .InnerContent .RightContent h3 {
 padding:8px;
-margin:5px 0 0 0;
 text-align:center;
 }
 .InnerContent .RightContent .Section div {
 display:block;
 font-size:18px;
-padding:14px 10px 0;
+padding:10px;
+background:none repeat scroll 0 0 #ffffff;
 }
 .InnerContent .RightContent div a {
 	color:#111111;
