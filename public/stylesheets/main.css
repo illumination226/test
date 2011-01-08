@@ -14,6 +14,8 @@ margin-right:auto;
 }
 .siteLogo{
 color: #ccc;
+margin:0 0 0 15px;
+padding:0;
 }
 .siteLogoMessage {
 color: #aaa;
@@ -45,7 +47,6 @@ float:right;
 float:left;
 display:block;
 text-align:center;
-margin-left:30px;
 }
 .Navigation ul li a{
 color:#111;
@@ -55,7 +56,7 @@ display:block;
 line-height:30px;
 overflow:hidden;
 font-weight:normal;
-width:120px;
+width:150px;
 }
 .Navigation ul li .lastrow {
 }
