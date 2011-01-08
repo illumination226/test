@@ -125,7 +125,7 @@ width:220px;
 min-height:700px;
 }
 .RightContent .Section {
-margin:0 10px;
+margin:10px;
 border: 1px solid #ccc;
 -moz-border-radius-topleft: 10px;
 -moz-border-radius-topright: 10px;
@@ -138,7 +138,7 @@ border: 1px solid #ccc;
 }
 .InnerContent .RightContent h3 {
 padding:8px;
-margin:10px 0 0 5px;
+margin:5px 0 0 10px;
 }
 .InnerContent .RightContent .Section div {
 display:block;
