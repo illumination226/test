@@ -17,6 +17,13 @@ color: #ccc;
 margin:0 0 0 15px;
 padding:0;
 }
+.siteLogo a{
+border-style : outset;
+border-color: red;
+border-width:7px;
+font-weight:bold;
+font-family: "Comic Sans MS", sans-serif;	
+}
 .siteLogoMessage {
 color: #aaa;
 margin:10px 0 0 15px;
