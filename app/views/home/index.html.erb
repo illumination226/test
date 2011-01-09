@@ -6,20 +6,18 @@
 <div class="Header">
 </div>
 <div class="InnerContent">
-<div class="LeftContent">
 <% allPages = Page.find(:all, :conditions => "name = 'home'", :order => "created_at DESC")%>
 <% allPages.each do |page| %>
-<div class="PadLeft">
     <h1><%=h page.title %></h1> 
     <div><%=raw render :text => page.content %></div>
-</div>
 <% end %>
- </div>
 </div>
+<div class="pageFooter">
 <div class="Navigation">
     <ul><li><%= link_to 'Blog', posts_path %></li><li><%= link_to 'Announcements', announcements_path %></li><li><a class="lastrow" href="/about">About Us</a></li></ul>
 </div>
 <h1 class="siteLogo"><a href="http://sahmcentral.com"><img class="logo" src="http://sahmcentral.com/images/logoLarge.png" alt="Sahmcentral.com"></a></h1>
+</div>
 <%= render 'partials/sfooter' %>
 </div>
 </div>
