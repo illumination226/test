@@ -17,6 +17,9 @@ color: #ccc;
 margin:0 0 0 15px;
 padding:0;
 }
+.pageFooter .siteLogo{
+margin:-15px 0 0 15px;
+}
 .siteLogo img {
 border:medium none;
 }

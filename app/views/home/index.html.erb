@@ -6,7 +6,6 @@
 <div class="Header">
 </div>
 <div class="InnerContent">
-<div class="LeftContent">
 <% allPages = Page.find(:all, :conditions => "name = 'home'", :order => "created_at DESC")%>
 <% allPages.each do |page| %>
 <div class="PadLeft">
@@ -14,7 +13,6 @@
     <div><%=raw render :text => page.content %></div>
 </div>
 <% end %>
- </div>
 </div>
 <div class="pageFooter">
 <div class="Navigation">
