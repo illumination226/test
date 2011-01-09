@@ -1,5 +1,10 @@
 <body topmargin="0" bottommargin="0" id="HomePage">
-<%= render 'partials/sheader' %>
+<center>
+<div class="center">
+<div class="innerSite">
+<div class="innerBody">
+<div class="Header">
+</div>
 <div class="InnerContent">
 <div class="LeftContent">
 <% allPages = Page.find(:all, :conditions => "name = 'home'", :order => "created_at DESC")%>
@@ -10,8 +15,12 @@
 </div>
 <% end %>
  </div>
-<%= render 'partials/scolumn2' %>
 </div>
+<div class="Navigation">
+    <ul><li><%= link_to 'Blog', posts_path %></li><li><%= link_to 'Announcements', announcements_path %></li><li><a class="lastrow" href="/about">About Us</a></li></ul>
+</div>
+<h1 class="siteLogo"><a href="http://sahmcentral.com"><img class="logo" src="http://sahmcentral.com/images/logoLarge.png" alt="Sahmcentral.com"></a></h1>
+<h3 class="siteLogoMessage">A Central Place For Moms To Go</h3>
 <%= render 'partials/sfooter' %>
 </div>
 </div>
