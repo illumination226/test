@@ -6,6 +6,7 @@
 <div class="Header">
 </div>
 <div class="InnerContent">
+<img class="homeLogo" src="http://sahmcentral.com/images/HomeLogo.png" alt="Sahmcentral.com">
 <% allPages = Page.find(:all, :conditions => "name = 'home'", :order => "created_at DESC")%>
 <% allPages.each do |page| %>
 <div class="PadLeft">
