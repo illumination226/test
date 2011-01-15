@@ -1,8 +1,8 @@
 @charset "utf-8";
 body {
 background:#CCCCCC;
-background: -moz-radial-gradient(50% 50%, farthest-side, #FFFFFF, #CCCCCC) no-repeat;
-background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#FFFFFF), to(#CCCCCC)) no-repeat;
+/*background: -moz-radial-gradient(50% 50%, farthest-side, #FFFFFF, #CCCCCC) no-repeat; */
+/*background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#FFFFFF), to(#CCCCCC)) no-repeat; */
 color:#111111;
 font-family:"Trebuchet MS",Helvetica,sans-serif;
 }
@@ -20,6 +20,20 @@ padding: 0 20px;
 #HomePage .InnerContent {
 min-height:0;
 }
+#HomePage .Navigation {
+padding:0;
+text-align:center;
+}
+#HomePage .Navigation ul {
+height:auto;
+float:none;
+}
+#HomePage .Navigation ul li a{
+margin:0 20px;
+padding:20px;
+}
+
+
 .siteLogo{
 color: #ccc;
 margin:0 0 0 15px;
