@@ -1,8 +1,8 @@
 @charset "utf-8";
 body {
 background:#CCCCCC;
-background: -moz-radial-gradient(50% 50%, farthest-side, #CCCCCC, #FFFFFF) no-repeat;
-background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#CCCCCC), to(#FFFFFF)) no-repeat;
+background: -moz-radial-gradient(50% 50%, farthest-side, #FFFFFF, #CCCCCC) no-repeat;
+background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#FFFFFF), to(#CCCCCC)) no-repeat;
 color:#111111;
 font-family:"Trebuchet MS",Helvetica,sans-serif;
 }
