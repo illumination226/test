@@ -1,6 +1,8 @@
 @charset "utf-8";
 body {
 background:#CCCCCC;
+background: -moz-radial-gradient(50% 50%, farthest-side, #CCCCCC, #FFFFFF) no-repeat;
+background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#CCCCCC), to(#FFFFFF)) no-repeat;
 color:#111111;
 font-family:"Trebuchet MS",Helvetica,sans-serif;
 }
@@ -14,6 +16,9 @@ margin-right:auto;
 }
 #HomePage .PadLeft {
 padding: 0 20px;
+}
+#HomePage .InnerContent {
+min-height:0;
 }
 .siteLogo{
 color: #ccc;
