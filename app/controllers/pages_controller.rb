@@ -1,4 +1,12 @@
 class PagesController < ApplicationController
+  before_filter :valid
+  
+  def valid
+    if !session[:user_id]
+      flash[:notice] = "Please login to create a new page"
+      redirect_to :controller => 'login', :action => 'index'
+    end
+  end
   # GET /pages
   # GET /pages.xml
   def index
