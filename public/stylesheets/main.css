@@ -30,7 +30,6 @@ float:none;
 }
 #HomePage .Navigation ul li a{
 font-size:24px;
-font-style:italic;
 margin:20px 54px;
 padding:20px;
 }
@@ -90,6 +89,7 @@ display:block;
 line-height:30px;
 overflow:hidden;
 font-weight:normal;
+font-style:italic;
 margin:0 10px;
 padding:0 10px;
 -moz-border-radius-topleft: 10px;
