@@ -1,0 +1,31 @@
+<h1>Listing surveys</h1>
+
+<table>
+  <tr>
+    <th>Question1</th>
+    <th>Question2</th>
+    <th>Question3</th>
+    <th>Question4</th>
+    <th>Question5</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @surveys.each do |survey| %>
+  <tr>
+    <td><%= survey.question1 %></td>
+    <td><%= survey.question2 %></td>
+    <td><%= survey.question3 %></td>
+    <td><%= survey.question4 %></td>
+    <td><%= survey.question5 %></td>
+    <td><%= link_to 'Show', survey %></td>
+    <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+    <td><%= link_to 'Destroy', survey, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Survey', new_survey_path %>
