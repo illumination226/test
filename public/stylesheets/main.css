@@ -1,8 +1,6 @@
 @charset "utf-8";
 body {
 background:url("http://sahmcentral.com/images/background.png") repeat scroll 0 0 #FFFFFF;
-/*background: -moz-radial-gradient(50% 50%, farthest-side, #FFFFFF, #CCCCCC) no-repeat; */
-/*background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#FFFFFF), to(#CCCCCC)) no-repeat; */
 color:#111111;
 font-family:"Trebuchet MS",Helvetica,sans-serif;
 }
