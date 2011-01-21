@@ -16,8 +16,10 @@
     <%= f.text_field :question1 %>
   </div>
   <div class="field">
-    Are you a: SAHM b: SAHM/work from home c: Work full time<br />
-    <%= f.text_field :question2 %>
+    Are you <br />
+    <%= f.radio_button :question2, "SAHM" %>a: SAHM
+    <%= f.radio_button :question2, "SAHM/work from home" %>b: SAHM/work from home
+    <%= f.radio_button :question2, "Work full time" %>c: Work full time
   </div>
   <div class="field">
     What knowledge have you gained since having kids that would have helped you earlier on as parents<br />
