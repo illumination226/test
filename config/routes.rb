@@ -1,4 +1,6 @@
 HelloWorld::Application.routes.draw do
+  get "sitemap/index"
+
   resources :surveys
 
   get "login/index"

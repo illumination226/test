@@ -5771,4 +5771,1981 @@ Completed 200 OK in 62ms (Views: 48.8ms | ActiveRecord: 1.7ms)
 
 
 Started GET "/" for 72.211.143.208 at Sun Jan 16 14:49:07 +0000 2011
-  Processing by HomeController#
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.6ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 166.205.9.216 at Sun Jan 16 16:59:05 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (20.7ms)
+Completed 200 OK in 112ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 166.205.9.216 at Sun Jan 16 16:59:59 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered partials/_sheader.html.erb (1.8ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (25.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (46.6ms)
+Completed 200 OK in 61ms (Views: 49.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 72.211.143.208 at Sun Jan 16 20:19:54 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.7ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (92.9ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Sun Jan 16 22:17:55 +0000 2011
+  Processing by SurveysController#new as HTML
+Completed   in 6ms
+
+ActiveRecord::StatementInvalid (Could not find table 'surveys'):
+  app/controllers/surveys_controller.rb:27:in `new'
+  app/controllers/surveys_controller.rb:27:in `new'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/survey/new" for 72.211.143.208 at Sun Jan 16 22:18:02 +0000 2011
+
+ActionController::RoutingError (No route matches "/survey/new"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 72.211.143.208 at Sun Jan 16 22:18:06 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.9ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 98.177.207.30 at Mon Jan 17 02:19:25 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (17.8ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 98.177.207.30 at Mon Jan 17 02:22:00 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.3ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 98.177.207.30 at Mon Jan 17 02:22:50 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered partials/_sheader.html.erb (1.7ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (22.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (40.9ms)
+Completed 200 OK in 53ms (Views: 43.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/announcements" for 98.177.207.30 at Mon Jan 17 02:24:39 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[36mAnnouncement Load (0.6ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (23.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (38.2ms)
+Completed 200 OK in 53ms (Views: 41.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/announcements" for 98.177.207.30 at Mon Jan 17 02:24:40 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[36mAnnouncement Load (0.7ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (2.3ms)
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (114.1ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered announcements/index.html.erb within layouts/announcements (133.7ms)
+Completed 200 OK in 149ms (Views: 136.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/about" for 98.177.207.30 at Mon Jan 17 02:24:42 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (36.2ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered about/index.html.erb within layouts/about (54.3ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 98.177.207.30 at Mon Jan 17 02:24:44 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.5ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/announcements" for 98.177.207.30 at Mon Jan 17 02:24:45 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[36mAnnouncement Load (0.6ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (1.9ms)
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (25.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (42.9ms)
+Completed 200 OK in 129ms (Views: 45.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 98.177.207.30 at Mon Jan 17 02:24:48 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.8ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 98.177.207.30 at Mon Jan 17 02:24:52 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (105.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered about/index.html.erb within layouts/about (122.8ms)
+Completed 200 OK in 126ms (Views: 124.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/test-4" for 98.177.207.30 at Mon Jan 17 02:24:56 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-4"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 4) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '4') ORDER BY created_at DESC
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618399398_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (23.4ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (57.8ms)
+Completed 200 OK in 72ms (Views: 60.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/hello-3" for 98.177.207.30 at Mon Jan 17 02:24:57 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 3) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '3') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__619238488_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (26.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (131.9ms)
+Completed 200 OK in 144ms (Views: 134.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/test-2" for 98.177.207.30 at Mon Jan 17 02:24:58 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.8ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '2') ORDER BY created_at DESC
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618776498_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (22.9ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (56.3ms)
+Completed 200 OK in 69ms (Views: 58.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/test-1" for 98.177.207.30 at Mon Jan 17 02:24:59 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.9ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '1') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618184218_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (24.1ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (61.5ms)
+Completed 200 OK in 76ms (Views: 64.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/announcements/test-2" for 98.177.207.30 at Mon Jan 17 02:25:00 +0000 2011
+  Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"test-2"}
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 2) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE (announcement_id = '2') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__619101678_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (29.1ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (172.0ms)
+Completed 200 OK in 185ms (Views: 174.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/announcements/testing-1" for 98.177.207.30 at Mon Jan 17 02:25:01 +0000 2011
+  Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"testing-1"}
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 1) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE (announcement_id = '1') ORDER BY created_at DESC
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__618669178_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (23.5ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (60.0ms)
+Completed 200 OK in 75ms (Views: 63.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/announcements" for 98.177.207.30 at Mon Jan 17 02:25:03 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (2.0ms)
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (26.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (44.0ms)
+Completed 200 OK in 147ms (Views: 47.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts" for 98.177.207.30 at Mon Jan 17 02:25:04 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (26.5ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (48.9ms)
+Completed 200 OK in 64ms (Views: 51.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 98.177.207.30 at Mon Jan 17 02:25:06 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.4ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 64.246.165.160 at Mon Jan 17 06:21:54 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.9ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 66.17.92.226 at Mon Jan 17 17:24:51 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (19.3ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 220.181.108.173 at Mon Jan 17 20:40:58 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.0ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 38.127.197.111 at Tue Jan 18 01:00:42 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (93.8ms)
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 38.127.197.111 at Tue Jan 18 01:00:45 +0000 2011
+  Processing by AboutController#index as */*
+Rendered partials/_sheader.html.erb (1.7ms)
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (36.2ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered about/index.html.erb within layouts/about (54.3ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/announcements" for 38.127.197.111 at Tue Jan 18 01:00:45 +0000 2011
+  Processing by AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (95.1ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered announcements/index.html.erb within layouts/announcements (110.2ms)
+Completed 200 OK in 122ms (Views: 112.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/announcements" for 38.127.197.111 at Tue Jan 18 01:00:47 +0000 2011
+  Processing by AnnouncementsController#index as */*
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (1.7ms)
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (23.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (38.9ms)
+Completed 200 OK in 59ms (Views: 41.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for 38.127.197.111 at Tue Jan 18 01:00:50 +0000 2011
+  Processing by PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (22.4ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (39.6ms)
+Completed 200 OK in 52ms (Views: 41.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/announcements/testing-1" for 38.127.197.111 at Tue Jan 18 01:00:54 +0000 2011
+  Processing by AnnouncementsController#show as */*
+  Parameters: {"id"=>"testing-1"}
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 1) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (2.1ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE (announcement_id = '1') ORDER BY created_at DESC
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__618190898_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (24.2ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (62.6ms)
+Completed 200 OK in 77ms (Views: 65.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/test-4" for 38.127.197.111 at Tue Jan 18 01:00:54 +0000 2011
+  Processing by PostsController#show as */*
+  Parameters: {"id"=>"test-4"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 4) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '4') ORDER BY created_at DESC
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__619059938_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (27.5ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (132.6ms)
+Completed 200 OK in 145ms (Views: 134.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/test-1" for 38.127.197.111 at Tue Jan 18 01:00:55 +0000 2011
+  Processing by PostsController#show as */*
+  Parameters: {"id"=>"test-1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '1') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618681738_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (22.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (56.7ms)
+Completed 200 OK in 70ms (Views: 58.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/announcements/test-2" for 38.127.197.111 at Tue Jan 18 01:00:55 +0000 2011
+  Processing by AnnouncementsController#show as */*
+  Parameters: {"id"=>"test-2"}
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 2) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.8ms)
+Rendered text template (0.0ms)
+  [[2011-01-18 02:42:17] ERROR bad URI `//PHPmyadmin'.
+1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE (announcement_id = '2') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__617804208_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (24.1ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (60.3ms)
+Completed 200 OK in 146ms (Views: 62.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/hello-3" for 38.127.197.111 at Tue Jan 18 01:00:55 +0000 2011
+  Processing by PostsController#show as */*
+  Parameters: {"id"=>"hello-3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 3) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '3') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618963998_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (95.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (129.4ms)
+Completed 200 OK in 142ms (Views: 131.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/test-2" for 38.127.197.111 at Tue Jan 18 01:00:55 +0000 2011
+  Processing by PostsController#show as */*
+  Parameters: {"id"=>"test-2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1[0m
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE (post_id = '2') ORDER BY created_at DESC
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618526758_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (22.6ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (55.5ms)
+Completed 200 OK in 68ms (Views: 57.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:16 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (20.2ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:17 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.1ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:17 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.6ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:18 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.6ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:18 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.0ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:18 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (16.9ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:19 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.1ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:19 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.1ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:19 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.5ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:20 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.3ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:20 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (20.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:21 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.7ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.9ms)
+Completed 200 OK in 23ms (Views: 22.1ms | A[2011-01-18 02:42:21] ERROR bad URI `//'.
+[2011-01-18 12:40:41] ERROR bad URI `//PHPmyadmin'.
+ctiveRecord: 0.7ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:21 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.9ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:25 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (17.8ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:25 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.7ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:25 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.1ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:26 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.1ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:26 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.5ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 02:42:26 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.2ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:40 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.9ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:40 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.8ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (22.7ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:41 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (18.6ms)
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:41 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.7ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (18.0ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:42 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:42 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.4ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:42 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.8ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/home (86.8ms)
+Completed 200 OK in 94ms (Views: 93.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:43 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.2ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:43 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:43 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.9ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:44 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (89.7ms)
+Completed 200 OK in 97ms (Views: 96.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:44 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.4ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:44 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Loa[2011-01-18 12:40:45] ERROR bad URI `//'.
+d (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.3ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:45 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.7ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:45 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.4ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:46 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.6ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:46 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:47 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.5ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:47 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.9ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.63.246.2 at Tue Jan 18 12:40:47 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (16.4ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 66.17.92.226 at Tue Jan 18 18:05:54 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.2ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 66.17.92.226 at Tue Jan 18 19:41:34 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (15.3ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 207.182.146.234 at Wed Jan 19 01:11:42 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.6ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 207.182.146.234 at Wed Jan 19 01:11:42 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.7ms)
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (41.3ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered about/index.html.erb within layouts/about (59.6ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/announcements" for 207.182.146.234 at Wed Jan 19 01:11:43 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[35mAnnouncement Load (0.5ms)[0m  SELECT "announcements".* FROM "announcements"
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (21.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (36.3ms)
+Completed 200 OK in 48ms (Views: 38.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for 207.182.146.234 at Wed Jan 19 01:11:43 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered partials/_sheader.html.erb (1.8ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (24.3ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (42.3ms)
+Completed 200 OK in 56ms (Views: 44.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/announcements/test-2" for 207.182.146.234 at Wed Jan 19 01:11:45 +0000 2011
+  Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"test-2"}
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 2) LIMIT 1
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (announcement_id = '2') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__619001348_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (26.1ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (130.6ms)
+Completed 200 OK in 143ms (Views: 132.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/announcements/testing-1" for 207.182.146.234 at Wed Jan 19 01:11:45 +0000 2011
+  Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"testing-1"}
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 1) LIMIT 1
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (announcement_id = '1') ORDER BY created_at DESC[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__618726768_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (23.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (56.8ms)
+Completed 200 OK in 70ms (Views: 59.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/hello-3" for 207.182.146.234 at Wed Jan 19 01:11:45 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 3) LIMIT 1
+Rendered partials/_sheader.html.erb (1.8ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '3') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618101348_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (23.3ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (61.0ms)
+Completed 200 OK in 77ms (Views: 65.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/test-1" for 207.182.146.234 at Wed Jan 19 01:11:46 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '1') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__619058318_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (95.6ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (129.1ms)
+Completed 200 OK in 141ms (Views: 131.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/test-2" for 207.182.146.234 at Wed Jan 19 01:11:46 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '2') ORDER BY created_at DESC[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618563388_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (23.6ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (56.6ms)
+Completed 200 OK in 69ms (Views: 58.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/test-4" for 207.182.146.234 at Wed Jan 19 01:11:46 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 4) LIMIT 1
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '4') ORDER BY created_at DESC[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__617660238_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (25.2ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (62.6ms)
+Completed 200 OK in 153ms (Views: 65.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 69.58.178.59 at Wed Jan 19 08:41:21 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.7ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 69.58.178.59 at Wed Jan 19 08:41:22 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.6ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 69.58.178.59 at Wed Jan 19 08:41:24 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered partials/_sheader.html.erb (1.8ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (24.5ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (43.1ms)
+Completed 200 OK in 59ms (Views: 46.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/about" for 69.58.178.59 at Wed Jan 19 08:41:25 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (35.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered about/index.html.erb within layouts/about (53.2ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/announcements" for 69.58.178.59 at Wed Jan 19 08:41:26 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[36mAnnouncement Load (0.6ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (1.8ms)
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (24.6ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (40.8ms)
+Completed 200 OK in 56ms (Views: 44.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 69.58.178.59 at Wed Jan 19 08:41:27 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.0ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/test-4" for 69.58.178.59 at Wed Jan 19 08:41:28 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 4) LIMIT 1
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '4') ORDER BY created_at DESC[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__619141118_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (25.9ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (127.6ms)
+Completed 200 OK in 140ms (Views: 129.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/hello-3" for 69.58.178.59 at Wed Jan 19 08:41:29 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"hello-3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 3) LIMIT 1
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '3') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618614178_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (22.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (58.7ms)
+Completed 200 OK in 72ms (Views: 61.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/test-2" for 69.58.178.59 at Wed Jan 19 08:41:31 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-2"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 2) LIMIT 1
+Rendered partials/_sheader.html.erb (3.0ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '2') ORDER BY created_at DESC[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__617830188_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (24.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (69.4ms)
+Completed 200 OK in 91ms (Views: 72.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/posts/test-1" for 69.58.178.59 at Wed Jan 19 08:41:32 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test-1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (post_id = '1') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_posts_show_html_erb___695392697__618959818_0 at /home/ec2-user/sahmcentral/app/views/posts/show.html.erb:31)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (94.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/show.html.erb within layouts/posts (128.0ms)
+Completed 200 OK in 140ms (Views: 130.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/announcements/test-2" for 69.58.178.59 at Wed Jan 19 08:41:33 +0000 2011
+  Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"test-2"}
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 2) LIMIT 1
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (announcement_id = '2') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__618525808_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (23.6ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (57.1ms)
+Completed 200 OK in 70ms (Views: 59.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/announcements/testing-1" for 69.58.178.59 at Wed Jan 19 08:41:34 +0000 2011
+  Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"testing-1"}
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" WHERE ("announcements"."id" = 1) LIMIT 1
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered text template (0.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE (announcement_id = '1') ORDER BY created_at DESC[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_announcements_show_html_erb___203474841__619335578_0 at /home/ec2-user/sahmcentral/app/views/announcements/show.html.erb:31)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (25.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/show.html.erb within layouts/announcements (135.9ms)
+Completed 200 OK in 148ms (Views: 138.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 184.73.30.110 at Wed Jan 19 09:42:21 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.8ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 66.17.92.226 at Wed Jan 19 17:14:45 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.7ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 66.17.92.226 at Wed Jan 19 18:51:09 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (16.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 220.181.108.168 at Wed Jan 19 19:30:28 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.1ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/w00tw00t.at.ISC.SANS.DFind:)" for 96.9.170.30 at Wed Jan 19 20:51:22 +0000 2011
+
+ActionController::RoutingError (No route matches "/w00tw00t.at.ISC.SANS.DFind:)"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 66.17.92.226 at Wed Jan 19 21:29:11 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.4ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 66.17.92.226 at Wed Jan 19 22:47:30 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 72.211.143.208 at Thu Jan 20 04:15:57 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/home (17.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/survey/new" for 72.211.143.208 at Thu Jan 20 04:16:05 +0000 2011
+
+ActionController::RoutingError (No route matches "/survey/new"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Thu Jan 20 04:16:08 +0000 2011
+  Processing by SurveysController#new as HTML
+Completed   in 5ms
+
+ActiveRecord::StatementInvalid (Could not find table 'surveys'):
+  app/controllers/surveys_controller.rb:27:in `new'
+  app/controllers/surveys_controller.rb:27:in `new'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreatePosts (20101208061222)
+Migrating to CreateComments (20101208121521)
+Migrating to CreateUsers (20101208121716)
+Migrating to CreateAnnouncements (20101208121850)
+Migrating to CreatePages (20101208121938)
+Migrating to CreateSurveys (20110116204549)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "surveys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question1" varchar(255), "question2" varchar(255), "question3" varchar(255), "question4" varchar(255), "question5" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110116204549')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("announcements")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("comments")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("pages")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("surveys")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Thu Jan 20 04:18:37 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered surveys/_form.html.erb (11.8ms)
+Rendered surveys/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Thu Jan 20 04:36:13 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.8ms)
+Rendered surveys/_form.html.erb (11.1ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (37.6ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 71ms (Views: 63.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Thu Jan 20 04:39:41 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered surveys/_form.html.erb (10.8ms)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (109.7ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/application (130.7ms)
+Completed 200 OK in 142ms (Views: 134.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 72.211.143.208 at Thu Jan 20 04:41:16 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.8ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/announcements" for 72.211.143.208 at Thu Jan 20 04:41:19 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[35mAnnouncement Load (0.5ms)[0m  SELECT "announcements".* FROM "announcements"
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (97.3ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered announcements/index.html.erb within layouts/announcements (113.0ms)
+Completed 200 OK in 125ms (Views: 115.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for 72.211.143.208 at Thu Jan 20 04:41:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered partials/_sheader.html.erb (1.7ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (24.8ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (43.0ms)
+Completed 200 OK in 56ms (Views: 45.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/announcements" for 72.211.143.208 at Thu Jan 20 04:41:29 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[35mAnnouncement Load (0.5ms)[0m  SELECT "announcements".* FROM "announcements"
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (21.8ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (36.5ms)
+Completed 200 OK in 49ms (Views: 38.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/survey/new" for 72.211.143.208 at Thu Jan 20 04:41:36 +0000 2011
+
+ActionController::RoutingError (No route matches "/survey/new"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Thu Jan 20 04:41:48 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered surveys/_form.html.erb (11.2ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (38.6ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered surveys/new.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 71ms (Views: 63.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 72.211.143.208 at Thu Jan 20 04:42:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+Rendered partials/_sheader.html.erb (1.7ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (99.9ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (118.2ms)
+Completed 200 OK in 131ms (Views: 120.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/announcements" for 72.211.143.208 at Thu Jan 20 04:43:15 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[35mAnnouncement Load (0.5ms)[0m  SELECT "announcements".* FROM "announcements"
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (23.1ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (39.3ms)
+Completed 200 OK in 52ms (Views: 41.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/about" for 72.211.143.208 at Thu Jan 20 04:43:17 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (111.0ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered about/index.html.erb within layouts/about (128.8ms)
+Completed 200 OK in 132ms (Views: 130.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/about" for 72.211.143.208 at Thu Jan 20 04:47:52 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (38.5ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered about/index.html.erb within layouts/about (56.7ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Thu Jan 20 04:48:00 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered surveys/_form.html.erb (11.4ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (121.8ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (142.1ms)
+Completed 200 OK in 151ms (Views: 144.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Thu Jan 20 04:56:02 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered surveys/_form.html.erb (12.4ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (44.5ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (66.6ms)
+Completed 200 OK in 77ms (Views: 69.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 220.181.108.172 at Thu Jan 20 05:10:09 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.7ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (21.1ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 66.17.92.226 at Thu Jan 20 14:57:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (23.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (40.4ms)
+Completed 200 OK in 53ms (Views: 42.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 66.17.92.226 at Thu Jan 20 20:49:16 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (14.4ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 207.46.12.239 at Thu Jan 20 23:07:18 +0000 2011
+  Processing by HomeController#index as */*
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (17.0ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 02:38:13 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.0ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 72.211.143.208 at Fri Jan 21 02:38:17 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (23.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered posts/index.html.erb within layouts/posts (40.2ms)
+Completed 200 OK in 52ms (Views: 42.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/survey/new" for 72.211.143.208 at Fri Jan 21 02:38:27 +0000 2011
+
+ActionController::RoutingError (No route matches "/survey/new"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 02:38:46 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered surveys/_form.html.erb (8.7ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (38.4ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (55.9ms)
+Completed 200 OK in 66ms (Views: 58.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 02:50:50 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered surveys/_form.html.erb (9.1ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (42.8ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (127.7ms)
+Completed 200 OK in 137ms (Views: 130.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 03:52:33 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.7ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:18:00 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered home/index.html.erb within layouts/home (21.8ms)
+Completed   in 26ms
+
+ActionView::Template::Error (undefined local variable or method `survey' for #<#<Class:0xb631da9c>:0xb631cc00>):
+    17: </div>
+    18: <div class="pageFooter">
+    19: <div class="Navigation">
+    20:     <ul><li><%= link_to 'Blog', posts_path %></li><li><%= link_to 'Announcements', announcements_path %></li><li><%= link_to 'Survey', survey %></li><li><a class="lastrow" href="/about">About Us</a></li></ul>
+    21: </div>
+    22: </div>
+    23: <%= render 'partials/sfooter' %>
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__180089637__619127028_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (109.7ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:22:05 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered home/index.html.erb within layouts/home (22.9ms)
+Completed   in 27ms
+
+ActionView::Template::Error (undefined local variable or method `survey' for #<#<Class:0xb64bfc24>:0xb64bde74>):
+    17: </div>
+    18: <div class="pageFooter">
+    19: <div class="Navigation">
+    20:     <ul><li><%= link_to 'Blog', posts_path %></li><li><%= link_to 'Announcements', announcements_path %></li><li><%= link_to 'Survey', survey %></li><li><a class="lastrow" href="/about">About Us</a></li></ul>
+    21: </div>
+    22: </div>
+    23: <%= render 'partials/sfooter' %>
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__180089637__618273568_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.4ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:22:12 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered home/index.html.erb within layouts/home (17.9ms)
+Completed   in 21ms
+
+ActionView::Template::Error (undefined local variable or method `survey' for #<#<Class:0xb63564c8>:0xb6355550>):
+    17: </div>
+    18: <div class="pageFooter">
+    19: <div class="Navigation">
+    20:     <ul><li><%= link_to 'Blog', posts_path %></li><li><%= link_to 'Announcements', announcements_path %></li><li><%= link_to 'Survey', survey %></li><li><a class="lastrow" href="/about">About Us</a></li></ul>
+    21: </div>
+    22: </div>
+    23: <%= render 'partials/sfooter' %>
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__180089637__619011068_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/announcements" for 72.211.143.208 at Fri Jan 21 05:22:22 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[35mAnnouncement Load (0.6ms)[0m  SELECT "announcements".* FROM "announcements"
+Rendered partials/_sheader.html.erb (11.8ms)
+Rendered announcements/index.html.erb within layouts/announcements (13.8ms)
+Completed   in 27ms
+
+ActionView::Template::Error (undefined local variable or method `new' for #<#<Class:0xb64e454c>:0xb64e3534>):
+    2: <div class="center">
+    3: <div class="innerSite">
+    4: <div class="Navigation">
+    5:     <ul><li><%= link_to 'Blog', posts_path %></li><li><%= link_to 'Announcements', announcements_path %></li><li><%= link_to 'Survey', surveys_path/new%></li><li><a class="lastrow" href="/about">About Us</a></li></ul>
+    6: </div>
+    7: <h1 class="siteLogo"><a href="http://sahmcentral.com"><img class="logo" src="http://sahmcentral.com/images/logo.png" alt="Sahmcentral.com"></a></h1>
+    8: <div class="innerBody">
+  app/views/partials/_sheader.html.erb:5:in `_app_views_partials__sheader_html_erb__701112101__618205728_1046096'
+  app/views/announcements/index.html.erb:2:in `_app_views_announcements_index_html_erb__787808893__618195948_0'
+  app/controllers/announcements_controller.rb:20:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/announcements" for 72.211.143.208 at Fri Jan 21 05:24:42 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1mSELECT "announcements".* FROM "announcements"[0m
+Rendered partials/_sheader.html.erb (13.7ms)
+Rendered announcements/index.html.erb within layouts/announcements (15.5ms)
+Completed   in 28ms
+
+ActionView::Template::Error (undefined local variable or method `new_surveys_path' for #<#<Class:0xb635f99c>:0xb635ea88>):
+    2: <div class="center">
+    3: <div class="innerSite">
+    4: <div class="Navigation">
+    5:     <ul><li><%= link_to 'Blog', posts_path %></li><li><%= link_to 'Announcements', announcements_path %></li><li><%= link_to 'Survey', new_surveys_path%></li><li><a class="lastrow" href="/about">About Us</a></li></ul>
+    6: </div>
+    7: <h1 class="siteLogo"><a href="http://sahmcentral.com"><img class="logo" src="http://sahmcentral.com/images/logo.png" alt="Sahmcentral.com"></a></h1>
+    8: <div class="innerBody">
+  app/views/partials/_sheader.html.erb:5:in `_app_views_partials__sheader_html_erb__701112101__618999548_1046096'
+  app/views/announcements/index.html.erb:2:in `_app_views_announcements_index_html_erb__787808893__618991918_0'
+  app/controllers/announcements_controller.rb:20:in `index'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/announcements" for 72.211.143.208 at Fri Jan 21 05:25:20 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+  [1m[35mAnnouncement Load (0.6ms)[0m  SELECT "announcements".* FROM "announcements"
+Rendered partials/_sheader.html.erb (2.2ms)
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (31.4ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered announcements/index.html.erb within layouts/announcements (66.9ms)
+Completed 200 OK in 85ms (Views: 70.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:25:23 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered surveys/_form.html.erb (8.6ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (102.8ms)
+Rendered partials/_sfooter.html.erb (0.4ms)
+Rendered surveys/new.html.erb within layouts/surveys (118.6ms)
+Completed 200 OK in 128ms (Views: 121.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/announcements" for 72.211.143.208 at Fri Jan 21 05:25:27 +0000 2011
+  Processing by AnnouncementsController#index as */*
+  [1m[35mAnnouncement Load (0.6ms)[0m  SELECT "announcements".* FROM "announcements"
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (22.9ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered announcements/index.html.erb within layouts/announcements (38.5ms)
+Completed 200 OK in 52ms (Views: 40.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:28:08 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered surveys/_form.html.erb (8.5ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (119.3ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (135.1ms)
+Completed 200 OK in 145ms (Views: 137.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:28:10 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.7ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (17.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:28:15 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered surveys/_form.html.erb (8.6ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (35.9ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (51.4ms)
+Completed 200 OK in 61ms (Views: 54.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:29:51 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/home (15.7ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:29:56 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.7ms)
+Rendered surveys/_form.html.erb (8.7ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (38.0ms)
+Rendered partials/_sfooter.html.erb (0.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (53.9ms)
+Completed 200 OK in 64ms (Views: 56.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:34:19 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (74.1ms)
+Rendered surveys/_form.html.erb (9.4ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (44.1ms)
+Rendered partials/_sfooter.html.erb (1.6ms)
+Rendered surveys/new.html.erb within layouts/surveys (136.2ms)
+Completed 200 OK in 145ms (Views: 138.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:38:08 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered surveys/_form.html.erb (10.1ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.4ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (41.5ms)
+Rendered partials/_sfooter.html.erb (1.7ms)
+Rendered surveys/new.html.erb within layouts/surveys (60.7ms)
+Completed 200 OK in 71ms (Views: 63.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:40:24 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.8ms)
+Rendered surveys/_form.html.erb (9.1ms)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36mAnnouncement Load (0.3ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10[0m
+Rendered partials/_scolumn2.html.erb (38.7ms)
+Rendered partials/_sfooter.html.erb (1.5ms)
+Rendered surveys/new.html.erb within layouts/surveys (56.7ms)
+Completed 200 OK in 67ms (Views: 59.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/about/index" for 72.211.143.208 at Fri Jan 21 05:40:40 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.6ms)
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.4ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (110.1ms)
+Rendered partials/_sfooter.html.erb (1.6ms)
+Rendered about/index.html.erb within layouts/about (129.1ms)
+Completed 200 OK in 133ms (Views: 130.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:40:44 +0000 2011
+  Processing by SurveysController#new as */*
+Rendered partials/_sheader.html.erb (1.6ms)
+Rendered surveys/_form.html.erb (8.7ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (37.2ms)
+Rendered partials/_sfooter.html.erb (1.6ms)
+Rendered surveys/new.html.erb within layouts/surveys (54.3ms)
+Completed 200 OK in 64ms (Views: 56.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:40:52 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered home/index.html.erb within layouts/home (13.2ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:40:57 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+Rendered home/index.html.erb within layouts/home (17.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 72.211.143.208 at Fri Jan 21 05:42:04 +0000 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (name = 'home') ORDER BY created_at DESC[0m
+Rendered text template (0.0ms)
+Rendered home/index.html.erb within layouts/home (15.5ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about/index" for 72.211.143.208 at Fri Jan 21 05:42:09 +0000 2011
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE (name = 'about') ORDER BY created_at DESC
+Rendered text template (0.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (36.1ms)
+Rendered partials/_sfooter.html.erb (1.4ms)
+Rendered about/index.html.erb within layouts/about (54.8ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/surveys/new" for 72.211.143.208 at Fri Jan 21 05:42:17 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.8ms)
+Rendered surveys/_form.html.erb (9.1ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" ORDER BY created_at DESC LIMIT 10
+Rendered partials/_scolumn2.html.erb (39.0ms)
+Rendered partials/_sfooter.html.erb (1.5ms)
+Rendered surveys/new.html.erb within layouts/surveys (56.8ms
