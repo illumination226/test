@@ -5,18 +5,22 @@
 <div class="PadLeft">
     <h1>Site Map</h1>
     <h3><a href="http://sahmcentral.com">Home</a></h3>
+    <br>
     <h3><a href="/about">About Us</a></h3>
+ 	<br>
  	<h3><%= link_to 'Blog Postings', posts_path %></h3>
 <% recent_posts = Post.all(:order => "created_at DESC")%>
 <% recent_posts.each do |ind_post| %>
     <div><%= link_to ind_post.title, ind_post %></div>
 <% end %>
+	<br>
 	<h3><%= link_to 'Announcements', announcements_path %></h3>
 <% recent_announcements = Announcement.all(:order => "created_at DESC")%>
 <% recent_announcements.each do |ind_announcement| %>
     <div><%= link_to ind_announcement.title, ind_announcement %></div>
-	<h3><%= link_to 'Survey', new_survey_path%></h3>
 <% end %>
+	<br>
+	<h3><%= link_to 'Survey', new_survey_path%></h3>
  </div>
  </div>
 <%= render 'partials/scolumn2' %>
