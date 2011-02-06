@@ -28,8 +28,9 @@ float:none;
 }
 #HomePage .Navigation ul li a{
 font-size:24px;
-margin:20px 54px;
-padding:20px;
+margin:0;
+padding:10px 0;
+width:100%;
 }
 .homeLogo{
 width:290px;
