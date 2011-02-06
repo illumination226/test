@@ -12,6 +12,9 @@ color:#000000;
 margin-left:auto;
 margin-right:auto;
 }
+#HomePage h1 {
+display:none;
+}
 #HomePage .PadLeft {
 padding: 0 10px;
 }
@@ -56,6 +59,7 @@ width:300px;
 text-align:left;
 background:#ffffff;
 border: 1px solid #ccc;
+margin-bottom:10px;
 -moz-border-radius-topleft: 10px;
 -moz-border-radius-topright: 10px;
 -moz-border-radius-bottomleft: 10px;
