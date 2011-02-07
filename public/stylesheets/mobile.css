@@ -76,7 +76,7 @@ padding:0;
 margin:0;
 display:block;
 height:30px;
-float:right;
+float:none;
 }
 .Navigation ul li {
 display:block;
@@ -109,11 +109,9 @@ width:100%;
 background:#ccc;
 }
 .InnerContent {
-min-height:400px;
+min-height:200px;
 }
 .LeftContent {
-float:left;
-width:758px;
 }
 .PadLeft {
 padding-left:20px;
@@ -161,9 +159,7 @@ display:block;
 float:left;
 }
 .RightContent {
-float:left;
-width:220px;
-min-height:700px;
+display:none;
 }
 .RightContent .Section {
 margin:10px;
