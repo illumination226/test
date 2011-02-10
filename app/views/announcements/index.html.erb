@@ -11,9 +11,10 @@
 	<div class="FloatRight">
 		<h5><%=h announcement.created_at.strftime("%B %d, %Y") %></h5>
 	</div>
-    <h3><%= link_to announcement.title, announcement %></h3>
+	<% link_to(announcement) do %>
+    <h3><%=h announcement.title %></h3>
     <div style="padding-top:5px;" ><%= render :text => announcement.content.slice(0,200).concat("...").gsub!(/(<[^>]*>)|\n|\t/s) {" "} %></div>
-
+	<% end %>
 </div>
 <% end %>
 </table>
