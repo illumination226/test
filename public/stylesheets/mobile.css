@@ -115,6 +115,9 @@ width:100%;
 .Navigation ul li a:hover {
 background:#ccc;
 }
+.innerBody {
+clear:both;
+}
 .InnerContent {
 min-height:200px;
 }
