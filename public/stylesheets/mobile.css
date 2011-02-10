@@ -29,6 +29,7 @@ float:none;
 #HomePage .Navigation ul li {
 float:none;
 padding:0;
+margin:0;
 }
 #HomePage .Navigation ul li a{
 font-size:24px;
@@ -74,8 +75,7 @@ margin:10px;
 -webkit-border-bottom-right-radius: 10px;
 }
 .Navigation {
-padding:10px 0 0 8px;
-/*background:url(NavigationGradiant.png) repeat-x;*/
+padding:0 0 0 8px;
 }
 .Navigation ul {
 padding:0;
@@ -89,6 +89,7 @@ display:block;
 text-align:center;
 float:left;
 padding:0 10px;
+margin:0 10px;
 }
 .Navigation ul li a{
 color:#111;
