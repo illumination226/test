@@ -214,7 +214,7 @@ clear:both;
 .footer a{
 float: left;
 color:#111;
-font-size:20px;
+font-size:24px;
 vertical-align:middle;
 display:block;
 line-height:30px;
@@ -222,7 +222,7 @@ overflow:hidden;
 font-weight:normal;
 font-style:italic;
 width:100%;
-padding:10px 0;
+padding:5px 0;
 -moz-border-radius-topleft: 10px;
 -moz-border-radius-topright: 10px;
 -moz-border-radius-bottomleft: 10px;
@@ -231,6 +231,9 @@ padding:10px 0;
 -webkit-border-top-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
 -webkit-border-bottom-right-radius: 10px;
+}
+.footer .siteMap{
+display:none;
 }
 .clear {
 clear:both;
