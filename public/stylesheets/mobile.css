@@ -214,8 +214,8 @@ padding:5px 10px;
 margin: 0 10px;
 float: left;
 }
-.footer .lastrow {
-float: none;
+.clear {
+clear:both;
 }
 .footer .developer {
 font-size:10px;
