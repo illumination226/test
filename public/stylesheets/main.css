@@ -199,10 +199,13 @@ textarea {
 	height:150px;
 }
 .footer {
-color:#5B2424;
+color:#111;
 font-size:12px;
 text-align:center;
 clear:both;
+}
+.footer a {
+padding:0 10px;
 }
 .footer .developer {
 font-size:10px;
