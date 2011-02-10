@@ -21,6 +21,7 @@ min-height:0;
 #HomePage .Navigation {
 padding:0;
 text-align:center;
+display:block;
 }
 #HomePage .Navigation ul {
 height:auto;
@@ -76,6 +77,7 @@ margin:10px;
 }
 .Navigation {
 padding:0 0 0 8px;
+display:none;
 }
 .Navigation ul {
 padding:0;
