@@ -210,9 +210,18 @@ text-align:center;
 clear:both;
 }
 .footer a{
-padding: 5px 10px;
-margin: 0 10px;
 float: left;
+color:#111;
+font-size:20px;
+vertical-align:middle;
+display:block;
+line-height:30px;
+overflow:hidden;
+font-weight:normal;
+font-style:italic;
+margin:0 10px;
+padding:10px;
+width:100%;
 -moz-border-radius-topleft: 10px;
 -moz-border-radius-topright: 10px;
 -moz-border-radius-bottomleft: 10px;
@@ -221,7 +230,6 @@ float: left;
 -webkit-border-top-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
 -webkit-border-bottom-right-radius: 10px;
-text-align:center;
 }
 .clear {
 clear:both;
