@@ -212,6 +212,7 @@ clear:both;
 .footer a{
 padding:5px 10px;
 margin: 0 10px;
+float: left;
 }
 .footer .developer {
 font-size:10px;
