@@ -197,11 +197,11 @@ padding:10px;
 background:none repeat scroll 0 0 #ffffff;
 }
 .InnerContent .RightContent div a {
-	color:#111111;
+color:#111111;
 }
 textarea {
-	width:500px;
-	height:150px;
+width:500px;
+height:150px;
 }
 .footer {
 color:#5B2424;
@@ -213,6 +213,9 @@ clear:both;
 padding:5px 10px;
 margin: 0 10px;
 float: left;
+}
+.footer .lastrow {
+float: none;
 }
 .footer .developer {
 font-size:10px;
