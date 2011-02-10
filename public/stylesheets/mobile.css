@@ -34,6 +34,7 @@ width:100%;
 }
 .homeLogo{
 width:290px;
+height:100px;
 margin-left:-10px;
 background: transparent url(http://sahmcentral.com/images/logoMobile.png) no-repeat scroll 0px 0px;
 }
@@ -70,6 +71,8 @@ margin:10px;
 }
 .Navigation {
 padding:10px 0 0 8px;
+position:absolute;
+top:90px;
 /*background:url(NavigationGradiant.png) repeat-x;*/
 }
 .Navigation ul {
@@ -82,6 +85,7 @@ float:none;
 .Navigation ul li {
 display:block;
 text-align:center;
+float:left;
 }
 .Navigation ul li a{
 color:#111;
