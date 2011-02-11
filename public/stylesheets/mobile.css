@@ -130,6 +130,9 @@ font-size:22px;
 padding-left:20px;
 padding-right:10px;
 }
+.PadLeft .FloatRight {
+font-size:12px;
+}
 .PadTop {
 padding:10px 0;
 }
