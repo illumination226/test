@@ -204,6 +204,9 @@ background:none repeat scroll 0 0 #ffffff;
 .InnerContent .RightContent div a {
 color:#111111;
 }
+.areagroup {
+margin-right:10px;
+}
 textarea {
 width:100%;
 height:150px;
