@@ -32,7 +32,7 @@ margin:20px 54px;
 padding:20px;
 }
 .homeLogo{
-background: transparent url(http://sahmcentral.com/images/logo-home.png) no-repeat scroll 0px 0px;
+background: transparent url("http://sahmcentral.com/images/logo-home.png") no-repeat scroll 0px 0px;
 width:941px;
 height:320px;
 }
