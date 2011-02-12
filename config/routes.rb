@@ -70,7 +70,7 @@ HelloWorld::Application.routes.draw do
   # just remember to delete public/index.html.
   root :controller => 'home', :action => 'index'
 
-  map.connect 'sitemap.xml', :controller => "sitemap", :action => "sitemap"
+  match "/sitemap.xml" => 'sitemap#sitemap'
 
   # See how all your routes lay out with "rake routes"
 
