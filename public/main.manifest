@@ -1,8 +1,8 @@
 CACHE MANIFEST
-#version 0.1.3
-#stylesheets\mobile.css
-#images\background.png
-#images\logoMobile.png
-#images\logo.png
-#images\apple-touch-icon.png
-#images\space.png
+#version 0.1.4
+http://www.sahmcentral.com/stylesheets/mobile.css
+http://sahmcentral.com/images/apple-touch-icon.png
+http://sahmcentral.com/images/space.png
+http://sahmcentral.com/images/background.png
+http://sahmcentral.com/images/logoMobile.png
+http://sahmcentral.com/images/logo.png

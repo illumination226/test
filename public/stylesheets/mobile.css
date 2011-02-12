@@ -42,7 +42,7 @@ width:100%;
 width:290px;
 height:100px;
 margin-left:-10px;
-background: transparent url(http://sahmcentral.com/images/logoMobile.png) no-repeat scroll 0px 0px;
+background: transparent url("http://sahmcentral.com/images/logoMobile.png") no-repeat scroll 0px 0px;
 }
 .siteLogo{
 color: #ccc;
