@@ -18,7 +18,7 @@ class EmailAlertsController < ApplicationController
 
     respond_to do |format|
       if @email_alert.save
-        format.html { redirect_to :action => 'home' }
+        format.html { redirect_to :controller => 'home', :action => 'index' }
         format.xml  { render :xml => @email_alert, :status => :created, :location => @email_alert }
       else
         format.html { render :action => "new" }
