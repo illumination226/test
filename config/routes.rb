@@ -16,6 +16,8 @@ HelloWorld::Application.routes.draw do
   resources :comments
 
   resources :posts
+  
+  resources :email_alerts
 
   get "home/index"
 
