@@ -32,6 +32,14 @@
     <%= f.text_field :question5 %>
   </div>
   <div class="field">
+    Are you: <br />
+    <%= f.radio_button :question6, "SAHM" %>a) SAHM
+    <%= f.radio_button :question6, "WAHM (work at home mom)" %>b) WAHM (work at home mom)
+    <%= f.radio_button :question6, "working mom" %>c) working mom
+    <%= f.radio_button :question6, "all of the above" %>d) all of the above
+    <%= f.radio_button :question6, "just an awesome mom!" %>e) just an awesome mom!
+  </div>
+  <div class="field">
     How can we make your life easier?<br />
     <%= f.text_field :question7 %>
   </div>    
