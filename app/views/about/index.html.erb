@@ -6,7 +6,7 @@
 <% allPages.each do |page| %>
 <div class="PadLeft">
     <h1><%=h page.title %></h1> 
-    <div><%= render :text => page.content %></div>
+    <div><%=raw render :text => page.content %></div>
 </div>
 <% end %>
  </div>
