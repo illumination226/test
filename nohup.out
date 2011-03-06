@@ -25201,4 +25201,211 @@ Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/about/index" for 72.211.139.159 at Sun Mar 06 21:06:08 +0000 2011
-  Processing by AboutCo
+  Processing by AboutController#index as HTML
+Rendered partials/_sheader.html.erb (1.3ms)
+Rendered text template (0.0ms)
+Rendered partials/_scolumn2.html.erb (3.3ms)
+Rendered partials/_sfooter.html.erb (1.3ms)
+Rendered about/index.html.erb within layouts/about (8.3ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/about" for 72.211.139.159 at Sun Mar 06 21:06:23 +0000 2011
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+Completed   in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=about):
+  app/controllers/pages_controller.rb:24:in `show'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/pages/about-2" for 72.211.139.159 at Sun Mar 06 21:06:32 +0000 2011
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"about-2"}
+Completed   in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=about-2):
+  app/controllers/pages_controller.rb:24:in `show'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (58.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.7ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:06:49 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.4ms)
+Rendered surveys/_form.html.erb (4.5ms)
+Rendered partials/_scolumn2.html.erb (4.2ms)
+Rendered partials/_sfooter.html.erb (1.5ms)
+Rendered surveys/new.html.erb within layouts/surveys (13.1ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login/home" for 72.211.139.159 at Sun Mar 06 21:07:10 +0000 2011
+  Processing by LoginController#home as HTML
+Rendered login/home.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:07:27 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.3ms)
+Rendered surveys/_form.html.erb (4.9ms)
+Rendered partials/_scolumn2.html.erb (3.7ms)
+Rendered partials/_sfooter.html.erb (1.2ms)
+Rendered surveys/new.html.erb within layouts/surveys (12.4ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/surveys/edit" for 72.211.139.159 at Sun Mar 06 21:07:30 +0000 2011
+  Processing by SurveysController#show as HTML
+  Parameters: {"id"=>"edit"}
+Completed   in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=edit):
+  app/controllers/surveys_controller.rb:16:in `show'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:07:50 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.3ms)
+Rendered surveys/_form.html.erb (4.2ms)
+Rendered partials/_scolumn2.html.erb (3.4ms)
+Rendered partials/_sfooter.html.erb (1.1ms)
+Rendered surveys/new.html.erb within layouts/surveys (11.3ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 72.211.139.159 at Sun Mar 06 21:33:30 +0000 2011
+  Processing by HomeController#index as HTML
+Rendered text template (0.0ms)
+Rendered home/index.html.erb within layouts/home (2.6ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:33:37 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.2ms)
+Rendered surveys/_form.html.erb (4.2ms)
+Rendered partials/_scolumn2.html.erb (3.4ms)
+Rendered partials/_sfooter.html.erb (1.1ms)
+Rendered surveys/new.html.erb within layouts/surveys (11.2ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:33:42 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (53.3ms)
+Rendered surveys/_form.html.erb (5.9ms)
+Rendered partials/_scolumn2.html.erb (4.7ms)
+Rendered partials/_sfooter.html.erb (1.4ms)
+Rendered surveys/new.html.erb within layouts/surveys (66.9ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:33:43 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered surveys/_form.html.erb (5.0ms)
+Rendered partials/_scolumn2.html.erb (4.0ms)
+Rendered partials/_sfooter.html.erb (1.4ms)
+Rendered surveys/new.html.erb within layouts/surveys (13.4ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:35:13 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.3ms)
+Rendered surveys/_form.html.erb (4.9ms)
+Rendered partials/_scolumn2.html.erb (3.8ms)
+Rendered partials/_sfooter.html.erb (1.2ms)
+Rendered surveys/new.html.erb within layouts/surveys (12.6ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/announcements" for 72.211.139.159 at Sun Mar 06 21:35:22 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+Rendered partials/_sheader.html.erb (1.3ms)
+Rendered partials/_scolumn2.html.erb (4.3ms)
+Rendered partials/_sfooter.html.erb (1.4ms)
+Rendered announcements/index.html.erb within layouts/announcements (10.5ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:35:26 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.2ms)
+Rendered surveys/_form.html.erb (4.1ms)
+Rendered partials/_scolumn2.html.erb (3.3ms)
+Rendered partials/_sfooter.html.erb (1.2ms)
+Rendered surveys/new.html.erb within layouts/surveys (11.1ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/announcements" for 72.211.139.159 at Sun Mar 06 21:35:30 +0000 2011
+  Processing by AnnouncementsController#index as HTML
+Rendered partials/_sheader.html.erb (1.3ms)
+Rendered partials/_scolumn2.html.erb (3.6ms)
+Rendered partials/_sfooter.html.erb (1.1ms)
+Rendered announcements/index.html.erb within layouts/announcements (9.1ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:35:32 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.5ms)
+Rendered surveys/_form.html.erb (4.5ms)
+Rendered partials/_scolumn2.html.erb (3.7ms)
+Rendered partials/_sfooter.html.erb (1.3ms)
+Rendered surveys/new.html.erb within layouts/surveys (12.3ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:35:34 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb (1.4ms)
+Rendered surveys/_form.html.erb (4.4ms)
+Rendered partials/_scolumn2.html.erb (3.5ms)
+Rendered partials/_sfooter.html.erb (1.8ms)
+Rendered surveys/new.html.erb within layouts/surveys (12.4ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/surveys/new" for 72.211.139.159 at Sun Mar 06 21:37:32 +0000 2011
+  Processing by SurveysController#new as HTML
+Rendered partials/_sheader.html.erb [2011-03-06 21:41:23] INFO  WEBrick 1.3.1
+[2011-03-06 21:41:23] INFO  ruby 1.8.7 (2010-08-16) [i386-linux]
+[2011-03-06 21:41:23] WARN  TCPServer Error: Address already in use - bind(2)
+/usr/lib/ruby/1.8/webrick/utils.rb:73:in `initialize': Address already in use - bind(2) (Errno::EADDRINUSE)
+	from /usr/lib/ruby/1.8/webrick/utils.rb:73:in `new'
+	from /usr/lib/ruby/1.8/webrick/utils.rb:73:in `create_listeners'
+	from /usr/lib/ruby/1.8/webrick/utils.rb:70:in `each'
+	from /usr/lib/ruby/1.8/webrick/utils.rb:70:in `create_listeners'
+	from /usr/lib/ruby/1.8/webrick/server.rb:75:in `listen'
+	from /usr/lib/ruby/1.8/webrick/server.rb:63:in `initialize'
+	from /usr/lib/ruby/1.8/webrick/httpserver.rb:24:in `initialize'
+	from /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:10:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:10:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+	from /usr/lib/ruby/gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+	from script/rails:6:in `require'
+	from script/rails:6
+=> Booting WEBrick
+=> Rails 3.0.3 application starting in production on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+Exiting
+[2011-03-06 21:42:58] ERROR SignalException: SIGTERM
+	/usr/lib/ruby/1.8/webrick/server.rb:91:in `select'
