@@ -94,4 +94,8 @@
   </tr>
 <% end %>
 </table>
+<% allEmailAlerts = EmailAlert.all %>
+<% allEmailAlerts.each do |email| %>
+  <%=h email.address %>, 
+<% end %>
 
