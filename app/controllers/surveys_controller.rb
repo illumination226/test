@@ -1,5 +1,5 @@
 class SurveysController < ApplicationController
-before_filter :valid, :except => [:new, :edit, :show]
+before_filter :valid, :except => [:new, :create]
 
   def valid
     if !session[:user_id]
