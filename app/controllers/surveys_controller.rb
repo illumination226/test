@@ -1,5 +1,5 @@
 class SurveysController < ApplicationController
-#before_filter :valid, :except => [:new, :edit]
+before_filter :valid, :except => [:new, :edit, :show]
 
   def valid
     if !session[:user_id]
@@ -84,7 +84,7 @@ class SurveysController < ApplicationController
     @survey.destroy
 
     respond_to do |format|
-      format.html { redirect_to(surveys_url) }
+      format.html { redirect_to :controller => 'login', :action => 'index'}
       format.xml  { head :ok }
     end
   end
