@@ -194,6 +194,9 @@ background:none repeat scroll 0 0 #ffffff;
 .InnerContent .RightContent div a {
 	color:#111111;
 }
+#email_alert_address {
+width:150px;
+}
 textarea {
 	width:500px;
 	height:150px;
