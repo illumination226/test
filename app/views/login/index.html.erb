@@ -1,3 +1,7 @@
+<body topmargin="0" bottommargin="0">
+<%= render 'partials/sheader' %>
+<div class="InnerContent">
+<div class="LeftContent">
 <h2>Please log in</h2>
 
 <% if flash[:notice] %>
@@ -13,3 +17,12 @@ User name:
 Password:
 <%= password_field("userform", "password",:size=>"20" )%>
 <input type="submit" value=" LOGIN " />
+ </div>
+<%= render 'partials/scolumn2' %>
+</div>
+<%= render 'partials/sfooter' %>
+</div>
+</div>
+</div>
+</center>
+</body>

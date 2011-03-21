@@ -1,3 +1,7 @@
+<body topmargin="0" bottommargin="0">
+<%= render 'partials/sheader' %>
+<div class="InnerContent">
+<div class="LeftContent">
 <% if flash[:notice] %>
 	<div style="font-family:'Trebuchet MS'; color:#FF0000; font-size:14px;">
 		<%= flash[:notice] %>
@@ -99,4 +103,13 @@
 <% allEmailAlerts.each do |email| %>
   <%=h email.address %>, 
 <% end %>
+ </div>
+<%= render 'partials/scolumn2' %>
+</div>
+<%= render 'partials/sfooter' %>
+</div>
+</div>
+</div>
+</center>
+</body>
 
