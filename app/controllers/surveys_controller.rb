@@ -1,5 +1,5 @@
 class SurveysController < ApplicationController
-before_filter :valid, :except => [:new, :edit]
+#before_filter :valid, :except => [:new, :edit]
 
   def valid
     if !session[:user_id]
@@ -68,7 +68,7 @@ before_filter :valid, :except => [:new, :edit]
 
     respond_to do |format|
       if @survey.update_attributes(params[:survey])
-        format.html { redirect_to(@survey, :notice => 'Survey was successfully updated.') }
+        format.html { redirect_to(new_survey_path, :notice => 'Survey was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
