@@ -121,7 +121,8 @@
     <td><%= survey.question5 %></td>
     <td><%= link_to 'Show', survey %></td>
     <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
-    <td><%= link_to 'Destroy', survey, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to "Delete Image", { :action => "delete", :id => survey.id },
+            :confirm => "Are you sure?", :method => :delete %></td>
   </tr>
 <% end %>
 </table>
