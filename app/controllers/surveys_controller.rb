@@ -52,7 +52,7 @@ before_filter :valid, :except => [:new]
 
     respond_to do |format|
       if @survey.save
-        format.html { redirect_to(@survey, :notice => 'Survey was successfully created.') }
+        format.html { redirect_to(new_survey_path, :notice => 'Survey was successfully created.') }
         format.xml  { render :xml => @survey, :status => :created, :location => @survey }
       else
         format.html { render :action => "new" }
