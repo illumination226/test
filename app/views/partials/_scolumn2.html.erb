@@ -16,29 +16,29 @@
 	<h3><%= link_to 'All Announcements', announcements_path %></h3>	
 </div>
 <div class="Section">
-<div class="EmailAlerts">
-<h3>Email Alerts</h3>
-	<% @email_alert = EmailAlert.new %>
-	<% form_for(@email_alert) do |f| %>
-	<% if @email_alert.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@email_alert.errors.count, "error") %> prohibited this email from being saved:</h2>
-
-      <ul>
-      <% @email_alert.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-    <% end %>
-	  <p>
-	    Enter you email to get Alerts and Announcements. 
-	    <%= f.text_field :address %>
-	  </p>
-	  <p>
+	<h3>Email Alerts</h3>
+		<% @email_alert = EmailAlert.new %>
+		<% form_for(@email_alert) do |f| %>
+	<div class="EmailAlerts">
+		<% if @email_alert.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@email_alert.errors.count, "error") %> prohibited this email from being saved:</h2>
+	
+	      <ul>
+	      <% @email_alert.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	    <% end %>
+		  <p>
+		    Enter you email to get Alerts and Announcements. 
+		    <%= f.text_field :address %>
+		  </p>
+	</div>
+	<h3>
 	    <%= f.submit 'Submit Email' %>
-	  </p>
+	</h3>
 	<% end %>
-</div>
 </div>
 </div>
