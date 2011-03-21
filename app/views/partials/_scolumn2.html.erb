@@ -16,6 +16,7 @@
 	<h3><%= link_to 'All Announcements', announcements_path %></h3>	
 </div>
 <div class="Section">
+<div class="EmailAlerts">
 <h3>Email Alerts</h3>
 	<% @email_alert = EmailAlert.new %>
 	<% form_for(@email_alert) do |f| %>
@@ -38,5 +39,6 @@
 	    <%= f.submit 'Submit Email' %>
 	  </p>
 	<% end %>
+</div>
 </div>
 </div>
