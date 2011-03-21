@@ -2,6 +2,7 @@
 <%= render 'partials/sheader' %>
 <div class="InnerContent">
 <div class="LeftContent">
+<div class="PadLeft">
 <h2>Please log in</h2>
 
 <% if flash[:notice] %>
@@ -17,6 +18,7 @@ User name:
 Password:
 <%= password_field("userform", "password",:size=>"20" )%>
 <input type="submit" value=" LOGIN " />
+</div>
  </div>
 <%= render 'partials/scolumn2' %>
 </div>
