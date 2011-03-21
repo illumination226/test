@@ -1,4 +1,12 @@
 class SurveysController < ApplicationController
+before_filter :valid, :except => [:new]
+
+  def valid
+    if !session[:user_id]
+      flash[:notice] = "Please login to modify a survey"
+      redirect_to :controller => 'login', :action => 'index'
+    end
+  end
   # GET /surveys
   # GET /surveys.xml
   def index
