@@ -9,24 +9,25 @@
 	</div>
 <% end %>
 <br />
+<div style="float:right;">
 <%= link_to "Logout",:controller => "login", :action => "logout" %>
+</div>
 <br />
 <%= link_to 'Create a new Post', :controller => 'posts', :action => 'new' %>
 <table>
   <tr>
     <th>Title</th>
-	<th></th>
     <th>User Name</th>
   </tr>
 <% allPosts = Post.all(:order => "created_at DESC") %>
 <% allPosts.each do |post| %>
   <tr>
     <td><%=h post.title %></td>
-    <td>   </td>
     <td><%=h post.name %></td>
     <td><%= link_to 'Show', post_path(post) %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to "Delete", { :controller => 'posts', :action => "destroy", :id => post.id },
+            :confirm => "Are you sure?", :method => :delete %></td>  
   </tr>
 <% end %>
 </table>
@@ -49,7 +50,8 @@
     <td><%=h announcement.title %></td>
     <td><%= link_to 'Show', announcement %></td>
     <td><%= link_to 'Edit', edit_announcement_path(announcement) %></td>
-    <td><%= link_to 'Destroy', announcement, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to "Delete", { :controller => 'announcements', :action => "destroy", :id => announcement.id },
+            :confirm => "Are you sure?", :method => :delete %></td>     
   </tr>
 <% end %>
 </table>
@@ -71,7 +73,8 @@
     <td><%=h page.title %></td>
     <td><%= link_to 'Show', page %></td>
     <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to "Delete", { :controller => 'pages', :action => "destroy", :id => page.id },
+            :confirm => "Are you sure?", :method => :delete %></td>     
   </tr>
 <% end %>
 </table>
@@ -95,7 +98,8 @@
     <td><%=h user.last_name %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to "Delete", { :controller => 'users', :action => "destroy", :id => user.id },
+            :confirm => "Are you sure?", :method => :delete %></td>    
   </tr>
 <% end %>
 </table>
@@ -121,7 +125,7 @@
     <td><%= survey.question5 %></td>
     <td><%= link_to 'Show', survey %></td>
     <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
-    <td><%= button_to "Delete Image", { :controller => 'surveys', :action => "destroy", :id => survey.id },
+    <td><%= button_to "Delete", { :controller => 'surveys', :action => "destroy", :id => survey.id },
             :confirm => "Are you sure?", :method => :delete %></td>
   </tr>
 <% end %>
