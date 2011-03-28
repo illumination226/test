@@ -84,7 +84,7 @@ before_filter :valid, :except => [:new, :create]
     @survey.destroy
 
     respond_to do |format|
-      format.html { redirect_to :controller => 'login', :action => 'index'}
+      format.html { redirect_to :controller => 'login', :action => 'home'}
       format.xml  { head :ok }
     end
   end
