@@ -84,7 +84,7 @@ class PagesController < ApplicationController
     @page.destroy
 
     respond_to do |format|
-      format.html { redirect_to(pages_url) }
+      format.html { redirect_to :controller => 'login', :action => 'home' }
       format.xml  { head :ok }
     end
   end

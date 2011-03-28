@@ -85,7 +85,7 @@ class UsersController < ApplicationController
     @user.destroy
 
     respond_to do |format|
-      format.html { redirect_to(users_url) }
+      format.html { redirect_to :controller => 'login', :action => 'home' }
       format.xml  { head :ok }
     end
   end

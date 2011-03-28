@@ -89,7 +89,7 @@ before_filter :valid, :except => [:index, :show, :to_param]
     @announcement.destroy
 
     respond_to do |format|
-      format.html { redirect_to(announcements_url) }
+      format.html { redirect_to :controller => 'login', :action => 'home' }
       format.xml  { head :ok }
     end
   end
