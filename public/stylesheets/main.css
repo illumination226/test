@@ -69,8 +69,10 @@ border: 1px solid #ccc;
 -webkit-border-bottom-left-radius: 10px;
 -webkit-border-bottom-right-radius: 10px;
 }
-.siteNavigation {
-border-bottom:dotted 1px #000000;
+.siteNavBottom {
+border-bottom:dotted 1px #CCCCCC;
+min-height:120px;
+margin:0 15px;
 }
 .Navigation {
 padding:10px 0 0 8px;
