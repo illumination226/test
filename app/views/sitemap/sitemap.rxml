@@ -20,14 +20,14 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
 	end 	
   @posts.each do |post|
     xml.url "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
-      xml.loc "http://www.sahmcentral.com" + url_for(post)
-      xml.lastmod post.updated_at.to_date
+      xml.loc "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" "http://www.sahmcentral.com" + url_for(post)
+      xml.lastmod "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" post.updated_at.to_date
     end
   end
   @announcements.each do |announcement|
     xml.url "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
-      xml.loc "http://www.sahmcentral.com" + url_for(announcement)
-      xml.lastmod announcement.updated_at.to_date
+      xml.loc "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" "http://www.sahmcentral.com" + url_for(announcement)
+      xml.lastmod "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" announcement.updated_at.to_date
     end
   end  
 end
