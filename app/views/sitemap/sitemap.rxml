@@ -1,31 +1,31 @@
 xml.instruct!
-xml.urlset do
-    xml.url do
+xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
+    xml.url "xmlns" => "" do
       xml.loc "http://www.sahmcentral.com"
     end
-	xml.url do
+	xml.url "xmlns" => "" do
 	  xml.loc "http://www.sahmcentral.com/posts"
 	end    
-	xml.url do
+	xml.url "xmlns" => "" do
 	  xml.loc "http://www.sahmcentral.com/announcements"
 	end    	
-	xml.url do
+	xml.url "xmlns" => "" do
 	  xml.loc "http://www.sahmcentral.com/surveys/new"
 	end  	
-	xml.url do
+	xml.url "xmlns" => "" do
 	  xml.loc "http://www.sahmcentral.com/about"
 	end  	
-	xml.url do
+	xml.url "xmlns" => "" do
 	  xml.loc "http://www.sahmcentral.com/sitemap/index"
 	end 	
   @posts.each do |post|
-    xml.url do
+    xml.url "xmlns" => "" do
       xml.loc "http://www.sahmcentral.com" + url_for(post)
       xml.lastmod post.updated_at.to_date
     end
   end
   @announcements.each do |announcement|
-    xml.url do
+    xml.url "xmlns" => "" do
       xml.loc "http://www.sahmcentral.com" + url_for(announcement)
       xml.lastmod announcement.updated_at.to_date
     end
