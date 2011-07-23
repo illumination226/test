@@ -20,18 +20,18 @@
    {
     var linkStyle = document.createElement("link");
     linkStyle.rel = "stylesheet";
-    linkStyle.href = "http://www.sahmcentral.com/stylesheets/mobile.css";
+    linkStyle.href = "/stylesheets/mobile.css";
     document.getElementsByTagName("head")[0].appendChild(linkStyle);
     document.write('<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">')
-    document.write('<link rel="apple-touch-icon" href="http://sahmcentral.com/images/apple-touch-icon.png"/>')
+    document.write('<link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>')
   }else
    {
    var linkStyleNormal = document.createElement("link");
     linkStyleNormal.rel = "stylesheet";
-    linkStyleNormal.href = "http://www.sahmcentral.com/stylesheets/main.css";
+    linkStyleNormal.href = "/stylesheets/main.css";
     document.getElementsByTagName("head")[0].appendChild(linkStyleNormal);    
    }
-   })(navigator.userAgent||navigator.vendor||window.opera,'http://sahmcentral.com/about');
+   })(navigator.userAgent||navigator.vendor||window.opera,'/about');
   </script>
   <noscript>
   <%= stylesheet_link_tag 'main' %>
